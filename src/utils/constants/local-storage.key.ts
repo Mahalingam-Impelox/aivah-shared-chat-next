@@ -1,0 +1,9 @@
+export const CONVERSATION_ID = 'conversation_id';
+export const KNOWLEDGEBASE_ID = 'knowledge-base-id';
+export const SESSION_ID = 'session_id';
+export const AVATAR_BG = 'avatar-bg';
+export const SESSION_TOKEN = 'session-token';
+export const SESSION_UUID = 'session-uuid';
+export const SEARCH_TOOLS = 'search-tools';
+export const CHAT_TYPE = 'chat-type';
+export const IS_TALK_TO_LLM = 'is-talk-to-llm';

@@ -1,0 +1,76 @@
+@import "~bootstrap/scss/_mixins";
+
+@include media-breakpoint-down(sm) {
+  .sidebar,
+  .desktop-conversation-list,
+  .message-input {
+    margin: 0;
+  }
+  .chat-list-container {
+    border: unset;
+  }
+  .conversation-btn {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    .action-btn {
+      visibility: visible !important;
+      gap: 4px;
+      &__button {
+        background-color: var(--hover-color);
+        border-radius: 4px;
+      }
+    }
+  }
+  .mobile-header {
+    display: flex;
+  }
+  .suggestion-wrapper {
+    // padding-left: 0 !important;
+    // padding-right: 0 !important;
+  }
+  .conversation-list-wrapper {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .message-container {
+    .message-content {
+      max-width: 85% !important;
+    }
+    .msg-text {
+      font-size: 14px;
+    }
+  }
+  .share-link-modal {
+    .modal-dialog {
+      .modal-content {
+        border: unset !important;
+        .modal-header {
+          padding-left: 16px !important;
+        }
+        .modal-body {
+          margin: 0 16px !important;
+        }
+        .share-link-date {
+          font-size: 12px;
+          line-height: 16px;
+        }
+        .share-link-name {
+          line-height: 22px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.delete-conversation-modal {
+  .modal-dialog {
+    max-height: 440px !important;
+    max-width: 440px !important;
+  }
+  .modal-content {
+    border: unset;
+  }
+}
+
+

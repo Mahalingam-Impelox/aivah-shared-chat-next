@@ -1,0 +1,367 @@
+// required to get variable
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/_variables";
+$primary: #212b36; // set the $primary variable
+$secondary: #637381; // set the $secondary variable
+$dark: #1d1d1d; // set the $secondary variable
+
+// merge with existing $theme-colors map
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary
+  )
+);
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "secodanry": $secondary
+  )
+);
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "dark": $dark
+  )
+);
+
+// set changes
+@import "~bootstrap/scss/bootstrap.scss";
+
+:root {
+  --font-sfpro-800: "Roboto Black";
+  --font-sfpro-700: "Roboto Bold";
+  --font-sfpro-600: "Roboto Medium";
+  --font-sfpro-500: "Roboto Medium";
+  --font-sfpro-400: "Roboto Regular";
+  --font-sfpro-300: "Roboto Light";
+  --font-sfpro-200: "Roboto Thin";
+  --font-sfpro-100: "Roboto Thin";
+
+  // Colors variable
+  // .light {
+  --color-primary: #212b36;
+  --color-secondary: #637381;
+  --color-secondary-100: #677784;
+  --color-disable: #919eab;
+  --color-light-gray: #f4f6f8;
+  --color-gray-fill: #f5f6f8;
+  --color-dark-gray: #1d1d1d;
+  --color-black: #000;
+  --color-white: #fff;
+  --neutral-04: #929292;
+  --color-warning: #fff9e0;
+  --color-warning-shade: #fffcf1;
+  --border-color-gray: #dfdfdf;
+  --border-color: #dfdfdf;
+  --hover-color: #eee;
+  --color-title: #000;
+  --text-disable: #919eab;
+  --sidebar-menu-text-grey: #a0a5a9;
+  --side-bar-active: #323232;
+
+  --success-main: #22c55e;
+  --warning-main: #ffab00;
+  --error-main: #ff5630;
+  --info-main: #637381;
+
+  --warning-contrast-text: #212b36;
+  --background-color: #fff;
+
+  --header-title: #1d1d1d;
+  --searchbar-background: #fff;
+  --searchbar-text: #212b36;
+  --searchbar-icon: #fff;
+  --static-color: #d1c8c8;
+
+  
+  // }
+
+  // new color theme
+}
+
+.light {
+  --container-bg: #fff;
+  --content-bg: #f6f6f6;
+  --box-shadow: rgba(16, 24, 40, 0.05);
+  --feature-bg-color: #ddd;
+  --dropdown-hover: #aaaaaa;
+  --plan-input-usd: #ddd;
+  --icon-color: #000000;
+  --icon-reverse-color: #fff;
+  --analytics-header-bg: rgba(75, 76, 97, 0.2);
+  --sidemenu-bg: #1d1d1d;
+  --card-bg: transparent;
+
+  // text
+  --text-primary: #111;
+  --text-secondary: #5e5e5e;
+  --text-title: #101828;
+  --text-highlight: #fff;
+  --text-disable: rgba(75, 76, 97, 0.6);
+
+  // common
+  --active-bg: #0d0d0d;
+  // --hover-bg: ;
+  --listed-bg: #fff;
+  --listed-border: #fff;
+
+  // table
+  --text-table-header: #677784;
+  --table-header-bg: #f5f6f8;
+  --text-table-content: #111;
+  --table-border: #f2f2f2;
+
+  // form
+  --form-default-text: #5e5e5e;
+  --form-active-text: #0d0d0d;
+
+  // button-secondary
+  --button-secondary-text: #344054;
+  --button-secondary-border: #d0d5dd;
+  --button-secondary-background: #fff;
+
+  --modal-button-secondary-text: #1d1d1d;
+  --modal-button-secondary-border: #ddd;
+
+  // button-primary
+  --button-primary-text: #fff;
+  --button-primary-border: #111;
+  --button-primary-background: #111;
+  --button-primary-background-disabled: #d4d4d4;
+  --button-primary-border-disabled: #d4d4d4;
+  --button-primary-background-hover: #d2c6ee;
+  --button-primary-border-hover: #d2c6ee;
+
+  --modal-button-primary-background: #1d1d1d;
+
+  // subscription-button
+  --subscription-color: #fff;
+  --subscription-bg: #1d1d1d;
+
+  --subscription-text: #5e5e5e;
+  --subscription-border: #eaecf0;
+  --subscription-header-bg: rgba(225, 225, 225, 0.6);
+
+  // input
+  --input-background: #fff;
+  --select-input-background: #fff;
+  --input-border: #d0d5dd;
+  --disabled-input-background: #e1e1e1;
+
+  // Modal
+  --modal-content-bg: #f4f6f8;
+  --modal-content-border: #ddd;
+
+  // privary
+  --privacy-border: #e1e1e1;
+  --privacy-bg: #fff;
+  --privacy-active: #9747ff;
+
+  --leads-container-bg: #fff;
+
+  // search
+  --search-bg: #f8f8f8;
+
+  // conversation
+  --conversation-active: #e1e1e1;
+  --conversation-hover: #f1f1f1;
+  --conversation-edit-active: #323232;
+  --conversation-action-hover: #fcfcfc;
+
+  // information
+  --information-bg: rgba(17, 17, 17, 0.6);
+  --information-text: #fff;
+
+  // chat
+  --chat-from-bg: #111;
+  --chat-from-text: #fff;
+  --chat-to-bg: #fff;
+  --chat-to-text: #111;
+
+  // settings
+  --settings-bg: #fff;
+  --settings-text: #111;
+  --settings-border: #ddd;
+
+  // content
+  --content-button-bg: rgba(225, 225, 225, 0.6);
+  --content-button-border: rgba(75, 76, 97, 0.6);
+  --content-button-text: #111;
+  --content-card: #1d1d1d;
+
+  // customize
+  --customize-tab-text: #111;
+  --customize-tab-bg: #fff;
+  --customize-tab-border: #a0a5a9;
+
+  --customize-active-tab-text: #111;
+  --customize-active-tab-bg: #e1e1e1;
+  --customize-active-tab-border: #e1e1e1;
+
+  // knowledgebase
+  --file-card-bg: #fff;
+
+  // cancel button
+  --button-cancel-text: rgba(75, 76, 97, 0.6);
+  --button-cancel-border: rgba(225, 225, 225, 0.6);
+  --button-cancel-background: rgba(225, 225, 225, 0.6);
+
+  // companion
+  --companion-user-chat-bg: #111;
+  --companion-user-chat-text: #fff;
+  --companion-bot-chat-bg: #fff;
+  --companion-bot-chat-text: #111;
+
+  --color-glass-bg:rgb(0 0 0 / 3%);
+
+  // dropdowns
+  --select-hover : rgba(0, 0, 0, 0.241);
+  --subtle-hover : rgba(0, 0, 0, 0.23);
+
+  //accordion-card
+  --accordion-card-background-color: #e1e1e1;
+}
+
+.dark {
+  --container-bg: #0d0d0d;
+  --content-bg: #151515;
+  --box-shadow: rgb(249 250 253 / 5%);
+  --feature-bg-color: #696969;
+  --plan-input-usd: #ddd;
+  --icon-color: #ffffff;
+  --icon-reverse-color: #0d0d0d;
+  --analytics-header-bg: rgba(75, 76, 97, 0.2);
+  --sidemenu-bg: #1d1d1d;
+  --dropdown-hover: #22212173;
+  --card-bg: #1d1d1d;
+
+  // text
+  --text-primary: #fff;
+  --text-secondary: #c4c4c4;
+  --text-title: #101828;
+  --text-highlight: #111;
+  --text-disabled: rgba(75, 76, 97, 0.6);
+
+  // common
+  --active-bg: #fff;
+  // --hover-bg: ;
+  --listed-bg: #111;
+  --listed-border: #c9d3de;
+
+  // table
+  --text-table-header: #677784;
+  --table-header-bg: #f5f6f8;
+  --text-table-content: #111;
+  --table-border: #f2f2f2;
+
+  // form
+  --form-default-text: #ffff;
+  --form-active-text: #ffff;
+
+  // button-secondary
+  --button-secondary-text: #fff;
+  --button-secondary-border: #4b4c61;
+  --button-secondary-background: #111;
+
+  --modal-button-secondary-text: #1d1d1d;
+  --modal-button-secondary-border: #ddd;
+
+  // button-primary
+  --button-primary-text: #111;
+  --button-primary-border: #aaa;
+  --button-primary-background: #fff;
+  --button-primary-background-disabled: #d4d4d4;
+  --button-primary-border-disabled: #d4d4d4;
+  --button-primary-background-hover: #d2c6ee;
+  --button-primary-border-hover: #d2c6ee;
+
+  --modal-button-primary-background: #1d1d1d;
+
+  // subscription-button
+  --subscription-color: #1d1d1d;
+  --subscription-bg: #c9d3de;
+
+  --subscription-text: #fff;
+  --subscription-border: #4b4c61;
+  --subscription-header-bg: #404952;
+
+  // input
+  --input-background: rgba(75, 76, 97, 0.2);
+  --select-input-background: rgba(75, 76, 97);
+  --input-border: #4b4c61;
+  --disabled-input-background: #19191B;
+
+  // Modal
+  --modal-content-bg: #f4f6f8;
+  --modal-content-border: #ddd;
+
+  // privary
+  --privacy-border: #4b4c61;
+  --privacy-bg: rgba(75, 76, 97, 0.2);
+  --privacy-active: #9747ff;
+
+  --leads-container-bg: rgba(75, 76, 97, 0.2);
+
+  // search
+  --search-bg: #f8f8f8;
+
+  // conversation
+  --conversation-active: #5e5e5e;
+  --conversation-hover: #6d6d6d;
+  --conversation-edit-active: #323232;
+  --conversation-action-hover: #fcfcfc;
+
+  // information
+  --information-bg: rgba(17, 17, 17, 0.6);
+  --information-text: #fff;
+
+  // chat
+  --chat-from-bg: #111;
+  --chat-from-text: #fff;
+  --chat-to-bg: #fff;
+  --chat-to-text: #111;
+
+  // settings
+  --settings-bg: #111;
+  --settings-text: #fff;
+  --settings-border: #c9d3de;
+
+  // content
+  --content-button-bg: rgba(201, 211, 222, 0.5);
+  --content-button-border: rgba(201, 211, 222, 0.5);
+  --content-button-text: #c9d3de;
+  --content-card: #1d1d1d;
+
+  // customize
+  --customize-tab-text: #111;
+  --customize-tab-bg: #fff;
+  --customize-tab-border: #a0a5a9;
+
+  --customize-active-tab-text: #111;
+  --customize-active-tab-bg: #e1e1e1;
+  --customize-active-tab-border: #e1e1e1;
+
+  // knowledgebase
+  --file-card-bg: rgba(75, 76, 97, 0.2);
+
+  // cancel button
+  --button-cancel-text: #aaa;
+  --button-cancel-border: rgba(255, 255, 255, 0.3);
+  --button-cancel-background: rgba(255, 255, 255, 0.3);
+
+  --color-glass-bg:rgb(92 90 90 / 10%);
+
+  // dropdowns
+  --select-hover: rgba(0, 0, 0, 0.577);
+  --subtle-hover : rgba(0, 0, 0, 0.45);
+
+  //accordion-card
+  --accordion-card-background-color: #0D0D0D;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+
